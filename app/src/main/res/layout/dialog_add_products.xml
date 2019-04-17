@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_background_2">
+
+                <ImageView
+                    android:id="@+id/img_btn_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/margin_16dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_close_gray_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/img_btn_add"
+                    android:layout_toRightOf="@+id/img_btn_close"
+                    android:gravity="center"
+                    android:text="Add: Product 1"
+                    android:textColor="#4c4c4c"
+                    android:textSize="@dimen/textMedium" />
+
+                <ImageView
+                    android:id="@+id/img_btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/margin_16dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_add_gray_24dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d4d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:background="@drawable/rounded_background">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_remove_white_24dp" />
+                </RelativeLayout>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:layout_marginBottom="@dimen/margin_16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/rounded_background4"
+                    android:gravity="center"
+                    android:hint="4"
+                    android:inputType="number"
+                    android:textSize="@dimen/textMedium" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:background="@drawable/rounded_background">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_add_white_24dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d4d4d4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16dp"
+                android:gravity="center"
+                android:text="$20.00"
+                android:textColor="#4c4c4c"
+                android:textSize="@dimen/textLarger"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Available quantity: "
+                    android:textColor="#eaeaea"
+                    android:textSize="@dimen/textMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textColor="#0cc579"
+                    android:textSize="@dimen/textMedium" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d4d4d4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16dp"
+                android:text="Size"
+                android:textColor="#0cc579"
+                android:textSize="@dimen/textMedium"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background"
+                        android:gravity="center"
+                        android:text="S"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="M"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="L"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="XL"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginRight="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="XXL"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16dp"
+                android:text="Color"
+                android:textColor="#555555"
+                android:textSize="@dimen/textMedium"
+                android:textStyle="bold" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background"
+                        android:gravity="center"
+                        android:text="Red"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="Green"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="Blue"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="White"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="Yellow"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginRight="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="Orange"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <HorizontalScrollView
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="Violet"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="Purple"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="Brown"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="Black"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="Gold"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginRight="@dimen/margin_16dp"
+                        android:background="@drawable/rounded_background_5"
+                        android:gravity="center"
+                        android:text="Silver"
+                        android:textColor="@color/color_background"
+                        android:textSize="@dimen/textMedium" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_16dp"
+        android:layout_toLeftOf="@+id/txt_money"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="Subtotal"
+        android:textColor="#000000"
+        android:textSize="@dimen/textSmall" />
+
+    <TextView
+        android:id="@+id/txt_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_16dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="$340.00"
+        android:textColor="#000000"
+        android:textSize="@dimen/textSmall" />
+
+    <View
+        android:id="@+id/viewfinal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:background="#d4d4d4" />
+
+
+</RelativeLayout>

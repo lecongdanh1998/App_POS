@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1"
+    >
+
+    <GridView
+        android:id="@+id/grid_view_products_small"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="3dp"
+        android:columnWidth="110dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:scrollbars="vertical" />
+    <ListView
+        android:layout_marginRight="1dp"
+        android:id="@+id/listview_list"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</android.support.constraint.ConstraintLayout>

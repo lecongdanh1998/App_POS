@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginRight="@dimen/margin_8dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearLayout_background_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_green_other"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_16dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="#14880"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textSmall" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="$27.00"
+            android:textColor="#4c4c4c"
+            android:textSize="@dimen/textSmall" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_background_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_green_other_radius"
+            android:paddingLeft="@dimen/margin_16dp"
+            android:paddingTop="@dimen/margin_8dp"
+            android:paddingRight="@dimen/margin_16dp"
+            android:paddingBottom="@dimen/margin_8dp">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:text="James"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSmall" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
